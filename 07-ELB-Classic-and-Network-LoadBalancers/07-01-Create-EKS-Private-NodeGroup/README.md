@@ -24,11 +24,11 @@ eksctl create nodegroup --cluster=eksdemo1 \
                         --region=us-east-1 \
                         --name=eksdemo1-ng-private1 \
                         --node-type=t3.medium \
-                        --nodes-min=2 \
-                        --nodes-max=4 \
+                        --nodes-min=1 \
+                        --nodes-max=3 \
                         --node-volume-size=20 \
                         --ssh-access \
-                        --ssh-public-key=kube-demo \
+                        --ssh-public-key=arun-default-ec2-connect \
                         --managed \
                         --asg-access \
                         --external-dns-access \
