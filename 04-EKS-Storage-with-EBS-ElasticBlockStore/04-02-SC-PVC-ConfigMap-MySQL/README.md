@@ -65,7 +65,7 @@ kubectl get pods -l app=mysql
 ## Step-04: Connect to MySQL Database
 ```
 # Connect to MYSQL Database
-kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -pdbpassword11
+kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h usermgmtdb.c5u28k4i6ck2.us-east-1.rds.amazonaws.com -pdbpassword11
 
 [or]
 
