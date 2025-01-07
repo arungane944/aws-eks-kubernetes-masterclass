@@ -62,7 +62,7 @@ eksctl create nodegroup --cluster=eksdemo1 \
                         --nodes-max=4 \
                         --node-volume-size=20 \
                         --ssh-access \
-                        --ssh-public-key=kube-demo \
+                        --ssh-public-key=arun-default-ec2-connect \
                         --managed \
                         --asg-access \
                         --external-dns-access \
@@ -311,7 +311,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --set serviceAccount.create=false \
   --set serviceAccount.name=aws-load-balancer-controller \
   --set region=us-east-1 \
-  --set vpcId=vpc-031305f055bda5cdb \
+  --set vpcId=vpc-0580d45bb5d87f194 \
   --set image.repository=602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-load-balancer-controller
 ```
 - **Sample output for AWS Load Balancer Controller Install steps**

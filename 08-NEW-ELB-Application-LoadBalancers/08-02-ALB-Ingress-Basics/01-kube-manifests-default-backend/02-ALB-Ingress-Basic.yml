@@ -20,8 +20,9 @@ metadata:
     alb.ingress.kubernetes.io/success-codes: '200'
     alb.ingress.kubernetes.io/healthy-threshold-count: '2'
     alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
+    #alb.ingress.kubernetes.io/subnets: "subnet-0b1da95c895152c56,subnet-08745a3a23a1afa76"
 spec:
-  ingressClassName: my-aws-ingress-class # Ingress Class
+  ingressClassName: alb # Ingress Class
   defaultBackend:
     service:
       name: app1-nginx-nodeport-service
