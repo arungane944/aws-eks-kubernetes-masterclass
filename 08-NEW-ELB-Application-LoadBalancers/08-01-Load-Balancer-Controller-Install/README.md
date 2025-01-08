@@ -69,7 +69,7 @@ eksctl create nodegroup --cluster=eksdemo1 \
                         --full-ecr-access \
                         --appmesh-access \
                         --alb-ingress-access \
-                        --node-private-networking       
+                        --node-private-networking
 ```
 ### Pre-requisite-3:  Verify Cluster, Node Groups and configure kubectl cli if not configured
 1. EKS Cluster
@@ -311,7 +311,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --set serviceAccount.create=false \
   --set serviceAccount.name=aws-load-balancer-controller \
   --set region=us-east-1 \
-  --set vpcId=vpc-0580d45bb5d87f194 \
+  --set vpcId=vpc-029fdd96f2178967a \
   --set image.repository=602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-load-balancer-controller
 ```
 - **Sample output for AWS Load Balancer Controller Install steps**
